@@ -5,7 +5,7 @@ cap.set(4,720)
 cap.set(10,100)
 while True:
 	secess,img=cap.read()
-	imgcanny=cv2.Canny(img,50,100)
+	imgcanny=cv2.Canny(img,10,200)
 	imgBlur=cv2.GaussianBlur(img,(3,3),0)
 	cv2.imshow('video',img)
 	cv2.imshow('canny',imgcanny)
